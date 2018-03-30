@@ -76,7 +76,7 @@ remove_from_block_list(char *addr)
 void
 clear_block_list()
 {
-    cache_clear(block_list, 3600); // Clear items older than 1 hour
+    cache_clear(block_list, 120); // Clear items older than 1 hour
 }
 
 int
